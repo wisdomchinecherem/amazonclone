@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  /* color-scheme: light dark; */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  background: rgb(234 237 237);
+  box-sizing: border-box;
+}
+.slant::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -11px;
+  width: 10px;
+  height: 100%;
+  background: #232f3a;
+  border: 6px solid #232f3a;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
